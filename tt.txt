@@ -1,0 +1,37 @@
+Morning (5:30 – 7:30)
+5:30 – 6:20 → Striver DSA video + notes
+6:20 – 7:30 → 2 LeetCode questions based on that topic
+Agar kisi din topic bada ho (Trees, Graphs, DP), to sirf 1 question bhi enough hai. 
+Quantity se zyada understanding matter karti hai.
+
+Evening (7:00 – 9:00)
+2 hours Project/Web Dev
+Build features
+Debug
+Learn only what the project requires
+Push code to GitHub regularly
+
+Agar kisi din college assignments ya exams ki wajah se sirf 30 minutes milte hain, tab bhi:
+1 LeetCode question ya
+30 min project
+Don't break the chain.
+
+Instead of daily targets only, keep weekly goals:
+✅ 5–7 Striver topics
+✅ 10–15 LeetCode questions
+✅ 10–12 hours on your project
+✅ 1 GitHub push almost every day
+
+Saturday
+Morning:
+3 hours DSA + LeetCode
+Evening:
+3-4 hours Project
+
+Sunday
+Morning:
+Weekly LeetCode Contest (if possible)
+Then:
+Revise weak DSA topics
+Evening:
+Continue Projec
