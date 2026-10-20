@@ -88,4 +88,8 @@ int main() {
 
     vector <vector <int>> mat = { {1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12} };
     cout<<mat[0].size()<<endl;
+
+    // converting a 1D coordinate to a 2D coordinate
+    // int row = index / cols; (where cols is the number of columns in the 2D array)
+    // int column = index % cols; (where cols is the number of columns in the 2D array)
 }
