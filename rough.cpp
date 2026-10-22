@@ -86,10 +86,20 @@ int main() {
     //     cout<<x<<" ";
     // }
 
-    vector <vector <int>> mat = { {1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12} };
-    cout<<mat[0].size()<<endl;
+    // vector <vector <int>> mat = { {1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12} };
+    // cout<<mat[0].size()<<endl;
 
     // converting a 1D coordinate to a 2D coordinate
     // int row = index / cols; (where cols is the number of columns in the 2D array)
     // int column = index % cols; (where cols is the number of columns in the 2D array)
+
+    // checking whether the max function can return the max element from an array of vectors
+    // vector <vector <int>> mat={{10, 20, 15}, {21, 30, 14}, {7, 16, 32}};
+    // vector <int> arr = {1, 2, 3, 4, 5};
+    // cout<<*max_element(arr.begin(), arr.end())<<endl;
+    // lexicographically means comparing the elements of the vectors in order, starting from the first element.
+    // If the first elements are equal, it compares the second elements, and so on. In this case, the
+    // max_element function will compare the vectors based on their first elements, then second elements, and so 
+    // on. Therefore, it will not return the vector with the maximum element in it. Instead, it will return the vector that is lexicographically largest.
+    // cout<<*max_element(mat.begin(), mat.end())<<endl; // this will not work because the max_element function compares the vectors lexicographically, not by their maximum elements.
 }
