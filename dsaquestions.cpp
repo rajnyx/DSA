@@ -2588,3 +2588,30 @@
 //         return pq.top().first;
 //     }
 // };
+
+    // brute force solution to find the peak elements in a 2D matrix
+    // vector <vector <int>> mat={{10, 20, 15}, {21, 30, 14}, {7, 16, 32}};
+    // vector <int> peak_elements;
+    // for (int i=0; i<mat.size(); i++) {
+    //     for (int j=0; j<mat[0].size(); j++) {
+    //         bool is_peak = true;
+    //         if (i > 0 && mat[i][j] <= mat[i-1][j]) {
+    //             is_peak = false;
+    //         }
+    //         if (i < mat.size()-1 && mat[i][j] <= mat[i+1][j]) {
+    //             is_peak = false;
+    //         }
+    //         if (j > 0 && mat[i][j] <= mat[i][j-1]) {
+    //             is_peak = false;
+    //         }
+    //         if (j < mat[0].size()-1 && mat[i][j] <= mat[i][j+1]) {
+    //             is_peak = false;
+    //         }
+    //         if (is_peak) {
+    //             peak_elements.push_back(mat[i][j]);
+    //         }
+    //     }
+    // }
+    // for (int x : peak_elements) {
+    //     cout << x << " ";
+    // }
