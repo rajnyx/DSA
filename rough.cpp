@@ -103,4 +103,8 @@ int main() {
     // on. Therefore, it will not return the vector with the maximum element in it. Instead, it will return the vector that is lexicographically largest.
     // cout<<*max_element(mat.begin(), mat.end())<<endl; // this will not work because the max_element function compares the vectors lexicographically, not by their maximum elements.
 
+    vector <vector <int>> matrix = { {1, 4, 9}, {2, 5, 6}, {3, 7, 8} };
+    cout<<matrix[0]<<endl;
+
+
 }

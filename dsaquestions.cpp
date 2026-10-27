@@ -2615,3 +2615,39 @@
     // for (int x : peak_elements) {
     //     cout << x << " ";
     // }
+
+// find the median element in a row wise sorted matrix
+// class Solution{
+// public:
+
+//     int greater(vector <vector <int>>& matrix, int mid) {
+//         int cnt = 0;
+//         for (int i=0; i<matrix.size(); i++) {
+//             cnt += upper_bound(matrix[i].begin(), matrix[i].end(), mid) - matrix[i].begin();
+//         }
+//         return cnt;
+//     }
+
+//     int findMedian(vector<vector<int>>&matrix) {
+//         int n = matrix.size() * matrix[0].size();
+//         int low = INT_MAX;
+//         for (int i=0; i<matrix.size(); i++) {
+//             low = min(low, matrix[i][0]);
+//         }
+//         int high = INT_MIN;
+//         for (int i=0; i<matrix.size(); i++) {
+//             high = max(high, matrix[i][matrix[0].size()-1]);
+//         }
+//         while (low <= high) {
+//             int mid = low + (high - low) / 2;
+//             int cnt = greater(matrix, mid);
+//             if (cnt > n/2) {
+//                 high = mid - 1;
+//             }
+//             else {
+//                 low = mid + 1;
+//             }
+//         }
+//         return low;
+//     }
+// };
