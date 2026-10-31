@@ -2651,3 +2651,38 @@
 //         return low;
 //     }
 // };
+
+// brute force --> longest palindromic string
+// class Solution {
+// public:
+//     string longestPalindrome(string s) {
+//         map<string, int> mp;
+//         int n = s.length();
+
+//         for (int low = 0; low < n; low++) {
+//             for (int high = low; high < n; high++) {
+
+//                 string sub = s.substr(low, high - low + 1);
+
+//                 string rev = sub;
+//                 reverse(rev.begin(), rev.end());
+
+//                 if (sub == rev) {
+//                     mp[sub] = sub.length();
+//                 }
+//             }
+//         }
+
+//         string ans = "";
+//         int maxi = 0;
+
+//         for (auto it : mp) {
+//             if (it.second > maxi) {
+//                 maxi = it.second;
+//                 ans = it.first;
+//             }
+//         }
+
+//         return ans;
+//     }
+// };
