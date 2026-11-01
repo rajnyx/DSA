@@ -2686,3 +2686,43 @@
 //         return ans;
 //     }
 // };
+
+// Minimum Moves to Equal Array Elements (brute force)
+// class Solution {
+// public:
+//     int minMoves(vector<int>& nums) {
+//         if (nums.size() <= 1) {
+//             return 0;
+//         }
+
+//         int cnt = 0;
+
+//         while (true) {
+//             int skip_idx = max_element(nums.begin(), nums.end()) - nums.begin();
+
+//             bool flag = false;
+
+//             for (int i = 1; i < nums.size(); i++) {
+//                 if (nums[i] != nums[0]) {
+//                     flag = true;
+//                     break;
+//                 }
+//             }
+
+//             if (!flag) {
+//                 break;
+//             }
+
+//             for (int i = 0; i < nums.size(); i++) {
+//                 if (i == skip_idx) {
+//                     continue;
+//                 }
+//                 nums[i]++;
+//             }
+
+//             cnt++;
+//         }
+
+//         return cnt;
+//     }
+// };
