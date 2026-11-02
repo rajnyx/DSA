@@ -115,5 +115,7 @@ int main() {
     // cout<<a+b<<endl; // this will print "12"
 
     vector <int> arr = {5, 5, 5, 5, 5};
-    cout<<max_element(arr.begin(), arr.end()) - arr.begin()<<endl; // this will print the index of the maximum element in the array, which is 4.
+    cout<<arr.size()<<endl; // this will print the size of the vector, which is 5.
+    // cout<<max_element(arr.begin(), arr.end()) - arr.begin()<<endl; // this will print the index of the maximum element in the array, which is 4.
+
 }
