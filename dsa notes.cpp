@@ -29,3 +29,34 @@
 // Pattern 3: Mean vs Median
 // - Mean minimizes the sum of squared differences.
 // - Median minimizes the sum of absolute differences.
+
+// What you notice	What to think about
+// Absolute difference	Can I convert it into a range?
+// Sorted array	Can I use binary search?
+// Find whether an element exists	Binary search / set
+// Find elements within a range	Lower bound / upper bound
+// Repeated nested loops	Can I eliminate one loop?
+// Minimum possible maximum	Binary search on answer
+
+// Look at the condition:
+// |x - y| <= d
+// Whenever you see an absolute difference, ask yourself:
+// Can I convert this mathematical condition into a range?
+// Why?
+// Because absolute difference tells us how far apart two numbers are.
+// For example:
+// |x - y| <= 2
+// If x = 5, which values can y have?
+// - y = 3 -> Difference = 2
+// - y = 4 -> Difference = 1
+// - y = 5 -> Difference = 0
+// - y = 6 -> Difference = 1
+// - y = 7 -> Difference = 2
+// Notice something?
+// All valid values of y lie between 3 and 7.
+// Therefore:
+// x - d <= y <= x + d
+// This is how we convert an absolute difference condition into a range.
+// 3. Recognise the opportunity
+// Once we get this range, we only need to check whether at least one element exists inside it.
+// If the array is sorted, we can use Binary Search (lower_bound) to check this efficiently.
