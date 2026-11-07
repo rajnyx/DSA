@@ -118,6 +118,15 @@ int main() {
     // cout<<arr.size()<<endl; // this will print the size of the vector, which is 5.
     // cout<<max_element(arr.begin(), arr.end()) - arr.begin()<<endl; // this will print the index of the maximum element in the array, which is 4.
 
-    cout<<abs(-5)<<endl;
+    // cout<<abs(-5)<<endl;
 
+    vector < vector <int> > arr(5);
+    // in this manner i have created a nested vector of size 5, where each element is an empty vector. The outer vector has a size of 5, and each inner vector is initially empty. You can then add elements to the inner vectors as needed.
+    arr[2].push_back(10);   
+    for (auto x : arr) {
+        for (auto y : x) {
+            cout<<y<<" ";
+        }
+        cout<<endl;
+    }
 }
